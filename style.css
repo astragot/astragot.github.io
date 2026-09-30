@@ -63,6 +63,26 @@ header {
     border-bottom: 1px solid var(--border);
 }
 
+footer {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--secondary-text);
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
 h1 {
     font-size: 2.8rem;
     letter-spacing: -1px;
