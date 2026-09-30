@@ -37,6 +37,13 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
 .tag {
     display: inline-block;
     background: var(--accent-background);
