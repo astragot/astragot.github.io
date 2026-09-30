@@ -1,3 +1,4 @@
+/*Colors*/
 :root {
     --background: #ffffff;
     --text: #24292f;
@@ -7,20 +8,59 @@
     --accent-background: #ddf4ff;
 }
 
+/*Page*/
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+/*Typography*/
+h1 {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+p {
+    color: var(--secondary-text);
+}
+
+/*Header*/
+header {
+    margin-bottom: 60px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--border);
+}
+
 .subtitle {
     font-size: 1.2rem;
-    color: var(--secondary-text);
+    /*color: var(--secondary-text); already in 'p'*/
     margin-top: 0;
     margin-bottom: 30px;
 }
 
+/*Projects*/
 .project {
     border: 1px solid var(--border);
     padding: 24px;
     border-radius: 8px;
     margin-bottom: 20px;
-
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .project h3 {
@@ -30,11 +70,6 @@
 
 .project p {
     margin-bottom: 20px;
-}
-
-.project:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .technologies {
@@ -54,22 +89,25 @@
     font-weight: 500;
 }
 
-body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    color: var(--text);
-    background-color: var(--background);
+/*Link*/
+a {
+    color: var(--accent);
 }
 
-header {
-    margin-bottom: 60px;
-    padding-bottom: 35px;
-    border-bottom: 1px solid var(--border);
+a:hover {
+    text-decoration: underline;
 }
 
+.project-link {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    text-decoration: none;
+}
+
+/*Footer*/
 footer {
     margin-top: 60px;
     padding-top: 25px;
@@ -90,29 +128,7 @@ footer a:hover {
     color: var(--accent);
 }
 
-h1 {
-    font-size: 2.8rem;
-    letter-spacing: -1px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-}
-
-p {
-    color: var(--secondary-text);
-}
-
-a {
-    color: var(--accent);
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/*Responsive*/
 @media (max-width: 600px) {
     body {
         padding: 40px 16px;
